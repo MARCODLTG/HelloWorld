@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor Pallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.jpeg" alt="Decor Pallet" class="logo-img">
+            <h1>Decor Pallet</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="carrito.html">Carrito de compra</a></li>
+                <li><a href="#" onclick="toggleChat()">Atención al cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="chat-popup" class="chat-popup">
+        <div class="chat-header">
+            <h4>Decor Pallets Bot</h4>
+            <button id="close-chat" onclick="toggleChat()">X</button>
+        </div>
+        <div class="chat-body">
+            <p id="bot-message">Hola, soy el bot de Decor Pallets. ¿En qué puedo ayudarte hoy?</p>
+            <form id="chat-form">
+                <label for="first-name">Nombre:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Apellido:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="query">Consulta:</label>
+                <textarea id="query" name="query" required></textarea>
+                
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Número:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <h1 class="productstitle">Productos</h1>
+    <section class="carousel">
+        <button class="nav-button" id="prev">←</button>
+        <div class="carousel-container">
+        </div>
+        <button class="nav-button" id="next">→</button>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="Icon/EnviosIcon.png" alt="Envío inmediato">
+            <p>Envío inmediato</p>
+        </div>
+        <div class="feature">
+            <img src="Icon/PreciosIcon.png" alt="Precios económicos">
+            <p>Precios económicos</p>
+        </div>
+        <div class="feature">
+            <img src="Icon/CalidadIcon.png" alt="Alta calidad">
+            <p>Alta calidad</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Logo.jpeg" alt="Decor Pallet">
+                <h1>Decor Pallet</h1>
+            </div>
+            <p>Dueño: Jairo Jiménez Veliz</p>
+            <p>Teléfonos: 0993468960 / 0981099578</p>
+            <p>Dirección: Kilometro 32 vía Duran – Tambo</p>
+        </div>
+    </footer>
+
+    <div id="chat-popup" style="display: none;">
+        <!-- Contenido del chat -->
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
